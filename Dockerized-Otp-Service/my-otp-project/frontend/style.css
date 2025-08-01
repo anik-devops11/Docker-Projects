@@ -1,0 +1,206 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   color: #333;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+   padding: 20px;
+   box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-out; /* Main container animation */
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 600; /* Bolder font for headings */
+}
+
+.form-container {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: left;
+    animation: slideUp 0.8s ease-out;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+input,
+button {
+    width: calc(100% - 22px);
+    padding: 12px; /* Increased padding */
+    margin-bottom: 15px; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Transition for hover effects */
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px; /* Larger font for buttons */
+    font-weight: 600;
+    animation: popIn 0.5s ease-out; /* Pop-up animation */
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.status-message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes popIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    input, button {
+        font-size: 14px;
+    }
+}
+
+.container {
+   background-color: #fff;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   max-width: 500px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+h1 {
+   color: #2c3e50;
+   margin-bottom: 20px;
+   animation: fadeIn 1s ease-out;
+}
+
+.form-container {
+   margin-bottom: 25px;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   background-color: #f9f9f9;
+   text-align: left;
+   animation: slideUp 0.8s ease-out;
+}
+
+h2 {
+   color: #34495e;
+   margin-top: 0;
+   margin-bottom: 15px;
+}
+
+input,
+button {
+   width: calc(100% - 22px);
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+button {
+   background-color: #3498db;
+   color: #fff;
+   border: none;
+   padding: 12px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+}
+
+button:hover {
+   background-color: #2980b9;
+}
+
+.status-message {
+   margin-top: 15px;
+   font-size: 14px;
+   font-weight: bold;
+}
+
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+@keyframes slideUp {
+   from { transform: translateY(20px); opacity: 0; }
+   to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+   .container {
+       padding: 20px;
+   }
+
+   input,
+   button {
+       font-size: 14px;
+   }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>OTP Verification System</title>
+   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <h1>OTP Verification System</h1>
+
+       <div class="form-container">
+           <h2>Send OTP</h2>
+           <form id="send-otp-form">
+               <input type="tel" id="phone-number" placeholder="Enter your phone number" required>
+               <button type="submit">Send OTP</button>
+           </form>
+           <p id="send-status" class="status-message"></p>
+       </div>
+
+       <div class="form-container">
+           <h2>Verify OTP</h2>
+           <form id="verify-otp-form">
+               <input type="tel" id="phone-number-verify" placeholder="Enter your phone number" required>
+               <input type="text" id="otp-code" placeholder="Enter OTP code" required>
+               <button type="submit">Verify OTP</button>
+           </form>
+           <p id="verify-status" class="status-message"></p>
+       </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
