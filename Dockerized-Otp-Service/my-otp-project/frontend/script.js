@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const sendStatus = document.getElementById('send-status');
     const verifyStatus = document.getElementById('verify-status');
 
-    // OTP পাঠানোর জন্য ফর্ম সাবমিট হ্যান্ডেল করা
+
     sendOtpForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const phoneNumber = document.getElementById('phone-number').value;
 
         try {
-            // রিলেটিভ ইউআরএল ব্যবহার করা হচ্ছে
+        
             const response = await fetch('/generate-otp', {
                 method: 'POST',
                 headers: {
@@ -34,14 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // OTP ভেরিফাই করার জন্য ফর্ম সাবমিট হ্যান্ডেল করা
+    
     verifyOtpForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const phoneNumber = document.getElementById('phone-number-verify').value;
         const otpCode = document.getElementById('otp-code').value;
 
         try {
-            // রিলেটিভ ইউআরএল ব্যবহার করা হচ্ছে
+          
             const response = await fetch('/verify-otp', {
                 method: 'POST',
                 headers: {
