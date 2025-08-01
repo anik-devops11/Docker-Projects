@@ -99,8 +99,8 @@ http://localhost:5000
 2. Clone the repository and move into the directory:
 
 ```bash
-git clone https://github.com/your-username/my-otp-project.git
-cd my-otp-project
+git clone https://github.com//Docker-Project.git
+cd Docker-Project/Dockerized-otp-service/my-otp-project
 docker-compose up --build
 ```
 
